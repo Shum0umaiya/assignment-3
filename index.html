@@ -7,11 +7,14 @@
     <!-- DaisyUI + Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 </head>
 <body>
      <!-- header section -->
-    <header class="px-20">
+    <header class="px-20 bg-[#FFFFFF]">
       <nav class="">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -28,26 +31,71 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Rinterio</a>
+            <a class="btn btn-ghost text-xl font-bold"> <i class="fa-solid fa-arrow-right -rotate-45 border border-[#ABEF5F] rounded-full bg-[#ABEF5F] p-1"></i>Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 space-x-2">
-              <li><a>Home</a></li>
-              <li><a>Service</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li class="text-[#494949] font-semibold"><a>Home</a></li>
+              <li class="text-zinc-500"><a>Service</a></li>
+              <li class="text-zinc-500"><a>Portfolio</a></li>
+              <li class="text-zinc-500"><a>Blogs</a></li>
+              <li class="text-zinc-500"><a>Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn rounded-full">Book Consult</a>
+              <!-- Search Icon -->
+              <a href="#" class="btn btn-ghost">
+                <i class="fa-solid fa-magnifying-glass border border-gray-100 rounded-full p-3 bg-gray-100"></i>
+              </a>
+        
+              <!-- Cart Icon -->
+              <a href="#" class="btn btn-ghost">
+                <i class="fa-solid fa-cart-shopping border border-gray-100 rounded-full p-3 bg-gray-100"></i>
+              </a>
+            <a class="btn rounded-full bg-[#ABEF5F]">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 border border-black rounded-full text-white bg-black p-1"></i></a>
           </div>
         </div>
       </nav>
+
+      <!-- Hero Section -->
+      <section class="mx-auto w-5/6 justify-items-center">
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col mb-5">
+            <img
+              src="assets/banner.png"
+              class="max-w-sm rounded-lg"/>
+            <div class="">
+              <h1 class="text-5xl font-bold mb-5">A barn house of this design has a 
+                <br>striking appearance</h1>
+              <p class="py-6 mb-5">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <a class="btn rounded-full bg-lime-200">View Details<i class="fa-solid fa-arrow-right -rotate-45 border border-[#ABEF5F] rounded-full text-white bg-[#ABEF5F] p-2"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- main section -->
      <main>
+      <!-- Thoughtful section -->
+       <section class="">
+        <div class="hero bg-base-200 min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse w-4/6">
+            <img
+              src="assets/Rectangle.png"
+              class="max-w-sm rounded-lg" />
+            <div>
+              <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+          </div>
+        </div>
+       </section>
 
      </main>
 
