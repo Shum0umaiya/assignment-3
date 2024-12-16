@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architectural designs</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- DaisyUI + Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body>
      <!-- header section -->
@@ -64,10 +80,10 @@
             <img
               src="assets/banner.png"
               class="max-w-sm rounded-lg"/>
-            <div class="">
+            <div class="text-center justify-center">
               <h1 class="text-5xl font-bold mb-5">A barn house of this design has a 
                 <br>striking appearance</h1>
-              <p class="py-6 mb-5">
+              <p class="py-4 px-16 mb-5 text-sm">
                 The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
               </p>
               <a class="btn rounded-full bg-lime-200">View Details<i class="fa-solid fa-arrow-right -rotate-45 border border-[#ABEF5F] rounded-full text-white bg-[#ABEF5F] p-2"></i></a>
@@ -82,16 +98,45 @@
      <main>
       <!-- Thoughtful section -->
        <section class="">
-        <div class="hero bg-base-200 min-h-screen">
-          <div class="hero-content flex-col lg:flex-row-reverse w-4/6">
+        <div class="hero bg-base-200 py-12">
+          <div class="hero-content flex-col lg:flex-row-reverse w-5/6">
             <img
               src="assets/Rectangle.png"
-              class="max-w-sm rounded-lg" />
-            <div>
-              <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
-              <p class="py-6">
+              class="max-w-md rounded-lg" />
+            <div class="">
+              <button class="border rounded-full bg-base-100 p-3"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+              <h1 class="text-3xl font-bold">We design thoughtful, <br>liveable spaces</h1>
+              <p class="py-6 text-sm">
                 The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
               </p>
+              <div class="">
+                <!-- card 1 -->
+              <div class="card card-side bg-base-100 w-[500px]">
+                <figure>
+                  <img
+                    src="assets/commercial.png"
+                    alt="Movie" class="max-w-lg pl-4" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title text-sm">Commercial</h2>
+                  <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card card-side bg-base-100 w-[500px]
+              mt-4">
+                <figure>
+                  <img
+                    src="assets/residential.png"
+                    alt="Movie" class="max-w-lg pl-4" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title text-sm">Residential</h2>
+                  <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              </div>
+              
             </div>
           </div>
         </div>
